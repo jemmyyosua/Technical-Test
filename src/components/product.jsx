@@ -62,9 +62,9 @@ export default function Product(){
                       <div className='flex flex-wrap justify-evenly'>
 
                       <div className="searchResult mt-3">
-                      {output.map((item) => (
+                      {output.map((item,i) => (
                             <div>
-                                <Card className="card mb-4" style={{ maxWidth: "50em" ,minHeight: "57vh"}} hidden={hidden}>
+                                <Card className="card mb-4" style={{ maxWidth: "50em" ,minHeight: "57vh"}} key={i} hidden={hidden}>
                                     <Card.Body>
                                         <Card.Header><h5> Menu : Coffee {item.title}</h5></Card.Header>
                                         <Icon className="mt-3" color="#2e3a3a" width={50} icon="simple-icons:coffeescript" />
